@@ -2,7 +2,7 @@ const express = require('express');
 const request = require('request');
 const app = express()
 
-const apiKey = '*****************';
+const apiKey = '1716df9912da9cb4b71475e1f477b598';
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
@@ -32,5 +32,5 @@ app.post('/', function (req, res) {
 })
 
 app.listen(5001, function () {
-  console.log('Example app listening on port 5001!')
+  console.log('The server listen on port 5001!')
 })
